@@ -133,7 +133,7 @@ p{
 .hero{
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:center; 
     gap:40px;
     flex-wrap:wrap;
     padding:60px;
@@ -339,6 +339,50 @@ body > p{
     font-size:30px;
     cursor:pointer;
 }
+/* FAQ Layout */
+#left,
+#right{
+    width: 100%;
+}
+
+#left{
+    text-align: center;
+    padding: 30px;
+}
+
+#right{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+#left h1{
+    font-size: 45px;
+}
+
+#left h4{
+    color: orange;
+}
+
+details{
+    margin-bottom: 15px;
+}
+.faq-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+    padding:50px;
+}
+
+#left{
+    flex:1;
+}
+
+#right{
+    flex:2;
+}
+
 /* ===========================
    RESPONSIVE DESIGN
 =========================== */
@@ -420,7 +464,48 @@ body > p{
     .menu-toggle{
     display:block;
 }
+}
+    .faq-container{
+        flex-direction:column
+        padding 12px;
+    }
 
+/* FAQ Mobile */
+#left{
+    padding:20px 10px;
+}
+
+#left h1{
+    font-size:30px;
+}
+
+#left h3{
+    font-size:20px;
+}
+
+#left p{
+    font-size:16px;
+}
+
+#right{
+    width:100%;
+    padding:10px;
+}
+
+details{
+    width:100%;
+    margin:10px 0;
+    padding:12px;
+}
+
+summary{
+    font-size:17px;
+    line-height:1.5;
+}
+
+details p{
+    font-size:15px;
+}
 .nav-links{
     display:none;
     flex-direction:column;
@@ -469,10 +554,12 @@ nav{
         margin:15px 0;
     }
 
-    nav{
-        flex-direction: column;
-        gap: 10px;
-    }
+   nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+}
 
     nav a{
         display: block;
@@ -535,7 +622,7 @@ nav{
     p{
         font-size: 16px;
     }
-}
+
 
 
 /* Small Mobile */
